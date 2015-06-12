@@ -7,7 +7,7 @@ This is a demo project to showcase/proof of concept using ES6 in Ionic app, and 
 Technically, the ES6 is transpiled using [SystemJS](https://github.com/systemjs/systemjs).
 
 ## ES6 Controllers
-'''
+```html
 export class PlaylistsCtrl{
 
   constructor($state){
