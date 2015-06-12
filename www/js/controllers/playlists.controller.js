@@ -21,8 +21,8 @@ System.register([], function (_export) {
         }
 
         _createClass(PlaylistsCtrl, [{
-          key: 'open',
-          value: function open(id) {
+          key: 'openPlaylist',
+          value: function openPlaylist(id) {
             var self = this;
             self.$state.go('app.single', { playlistId: id });
           }

@@ -1,7 +1,7 @@
 <ion-view view-title="Playlists">
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="playlist in vm.playlists" ng-click="vm.open(playlist.id)">
+      <ion-item ng-repeat="playlist in vm.playlists" ng-click="vm.openPlaylist(playlist.id)">
         {{playlist.title}}
       </ion-item>
     </ion-list>

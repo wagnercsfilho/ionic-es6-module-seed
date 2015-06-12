@@ -10,14 +10,14 @@ var babel = require('gulp-babel');
 var clean = require('gulp-clean');
 
 var paths = {
-  js: ['./js/**/*.js'],
+  js: ['./es6/**/*.js'],
   sass: ['./scss/**/*.scss']
 };
 
 gulp.task('default', ['sass', 'babel']);
 
 gulp.task('babel', ['clear'], function(done){
-  gulp.src('./js/**/*.js')
+  gulp.src('./es6/**/*.js')
     .pipe(babel({ modules: "system", sourceMap: true }))
     .pipe(gulp.dest('./www/js/'))
     .on('end', done);
